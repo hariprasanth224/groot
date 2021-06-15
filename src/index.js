@@ -9,13 +9,13 @@ import './App.css';
 import {ToastsContainer, ToastsStore} from 'react-toasts';
 
 const App = ({ children }) => (
-  
- 
+  <>
+  <Header as="h3" style={{ margin: 20 ,alignItems: "center" , justifyContent: "center" , display: "flex" }} >Student Details 😊</Header>
   <Container  style={{ margin: 20 , alignItems: "center" , justifyContent: "center" , display: "flex" }}>
     
     {children}
   </Container>
-
+  </>
 );
 
 const styleLink = document.createElement("link");
@@ -24,7 +24,7 @@ styleLink.href = "https://cdn.jsdelivr.net/npm/semantic-ui/dist/semantic.min.css
 document.head.appendChild(styleLink);
 
 ReactDOM.render(
-  <App className="App"  style={{backgroundColor: "black"}}>
+  <App className="App" >
     <Card.Group>
       {/* <cardview /> */}
       <RESTAPI/>
