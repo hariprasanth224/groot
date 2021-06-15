@@ -1,5 +1,19 @@
 ## hosted in
 https://hp-groot-api.netlify.app/
+# Technologies Used
+React JS (front-end)
+mockapi (Making mock API)
+# Completed the following features
+Created a mock API using mockapi.io.
+Dummy form for Login and register 
+List of users displayed in UI.
+When a user clicks on a particular record, he should be able to see more details of that user.
+While showing the details provide an option to view details of the next and previous user in the list. I provided arrows for moving.
+Final source code is shared in GitHUB.
+App deployed in Firebase.
+# Note
+My API Link->https://60c72aaf06f3160017d28aae.mockapi.io/studentRecords
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
