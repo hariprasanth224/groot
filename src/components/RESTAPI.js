@@ -46,43 +46,29 @@ class RestAPI extends Component {
     console.log(this.state.popup);
 
     if (this.state.auth == 0) {
-      return (
-        <div id="body"> 
+     
+        return(
         <form onSubmit={this.authenticate}>
-                                         
-        <div id="main">
-      
-      <div id="tab-btn">
-        <a href="#" class="login-tab active">Sign In</a>
-        <a href="#" class="register-tab">Sign Up</a>
-      </div>
-      
-      <div class="login-box">
-        <h2>Get Started!</h2>
-        <form action="#" method="post" id="login-form">
-          <input type="text" name="username" placeholder="Username" class="inp"  autofocus /><br />
-          <input type="password" name="password" placeholder="Password" class="inp"  /><br />
-          <a href="#" id="forgot">Forgot Password?</a><br />
-          <input type="submit" name="submit" value="SIGN IN" onClick={()=>this.login() }class="sub-btn" />
-        </form>
-      </div>
-      
-      <div class="register-box">
-        <h2>Register With Us!</h2>
-        <form action="#" method="post" id="reg-form">
-          <input type="text" name="uname" placeholder="Enter Username" class="inp"  autofocus /><br />
-          <input type="email" name="email" placeholder="Enter Email" class="inp"  /><br />
-          <input type="password" name="pass" placeholder="Enter Password" class="inp"  /><br />
-          <input type="password" name="repass" placeholder="Confirm Password" class="inp"  /><br />
-          <input type="submit" name="submit" value="SIGN UP" onClick={()=>this.login() } class="sub-btn" />
-        </form>
-      </div>
-    </div>
-          
-      </form>
-      </div>
-      )
-          
+                                            <div className="form-group row">
+                                            <label htmlFor="username"
+                                                       className="col-sm-12 col-form-label">User Name:</label>
+                                                <div className="col-sm-12">
+                                                    <input type="text" className="form-control" id="username"
+                                                            placeholder="Enter Username"
+                                                           />
+                                                </div>
+                                                <label htmlFor="password"
+                                                       className="col-sm-12 col-form-label">Password:</label>
+                                                <div className="col-sm-12">
+                                                    <input type="password" className="form-control" id="password"
+                                                            placeholder="Enter Password"/>
+                                                </div>
+                                            </div>
+
+                                            <button type="button" onClick={()=>this.login() }
+                                                    className="premium-button">Submit
+                                            </button>
+                                        </form>)          
     }
           else{
 
